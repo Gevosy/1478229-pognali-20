@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Георгий_](https://up.htmlacademy.ru/adaptive/20/user/1478229).
-* Наставник: `Неизвестно`.
+* Студент: [Геворг Испирян](https://up.htmlacademy.ru/adaptive/20/user/1478229).
+* Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
 
 ---
 
