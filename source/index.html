@@ -5,37 +5,208 @@
     <title>HTML Academy: Погнали</title>
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <p class="page-header__go-action">Погнали?</p>
-      <section class="page-header__box-title-authorization">
-        <h1 class="page-header__title-main-page">О сервисе направления попутчики</h1>
-        <a class="page-header__button-authorization">Авторизация</a>
+    <header class="header">
+      <p class="go-action">Погнали?</p>
+      <section class="about-service">
+        <h1 class="about-service__title-main">О сервисе направления попутчики</h1>
+        <a class="about-service__button-authorization" href="#">Авторизация</a>
       </section>
-      <div class="page-header__box-contacts">
-        <ul class="page-header__list-contacts">
-          <li class="page-header__item-contacts">
-            <a class="page-header__main-phone" href="tel:88005558628" aria-label="Номер телефона. 88005558628">8 800 555-86-28</a>
+      <div class="contacts">
+        <ul class="contacts__list-contacts">
+          <li class="contacts__item-contacts">
+            <svg class="contacts__icon"></svg>
+            <a class="contacts__phone" href="tel:88005558628" aria-label="Номер телефона. 88005558628">8 800 555-86-28</a>
           </li>
-          <li class="page-header__item-contacts">
-            <a class="page-header__main-email" href="mailto:mail@htmlcademy.ru" aria-label="Электронная почта.">mail@htmlcademy.ru</a>
+          <li class="contacts__item-contacts">
+            <svg class="contacts__icon"></svg>
+            <a class="contacts__email" href="mailto:mail@htmlcademy.ru" aria-label="Электронная почта.">mail@htmlcademy.ru</a>
           </li>
         </ul>
       </div>
-      <div class="page-header__box-social">
-        <ul class="page-header__list-social">
-          <li class="page-header__item-social">Facebook</li>
-          <li class="page-header__item-social">ВКонтакте</li>
-          <li class="page-header__item-social">Instagram</li>
+      <div class="social">
+        <ul class="social__list-social">
+          <li class="social__item-social"><svg class="social__icon"></svg>Facebook</li>
+          <li class="social__item-social"><svg class="social__icon"></svg>ВКонтакте</li>
+          <li class="social__item-social"><svg class="social__icon"></svg>Instagram</li>
         </ul>
       </div>
     </header>
-
-    <main class="page-main">
-
+    <main class="main">
+      <section class="scheme">
+        <h2 class="scheme__title-scheme">Мурат Эльтазин главный редактор газеты «гаджетлайф»</h2>
+        <ul class="scheme__list-roadmap">
+          <li class="scheme__item-roadmap">Выберите направление</li>
+          <li class="scheme__item-roadmap">Изучите идеи путешественников</li>
+          <li class="scheme__item-roadmap">Находите тех, кто похож на вас</li>
+          <li class="scheme__item-roadmap">Путешествуйте</li>
+        </ul>
+        <section class="scheme__serivce">
+          <h3 class="scheme__title-serivce">О сервисе</h3>
+          <p class="scheme__paragraph-service">
+            Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+          </p>
+          <p class="scheme__paragraph-serivce-add">
+            А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
+          </p>
+        </section>
+      </section>
+      <section class="route">
+        <h2 class="route__title-route">Направления</h2>
+        <p class="route__paragraph-route">
+          Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+        </p>
+        <section class="country">
+          <img class="country__img" alt="">
+          <div class="country__wrapper">
+            <div class="country__information-title">
+              <h3 class="country__title">Таиланд</h3>
+              <p class="country__cite">Джунгли зовут!</p>
+            </div>
+            <div class="country__visit">
+              <span class="country__number-of-people">18321</span>
+            </div>
+          </div>
+        </section>
+        <section class="country">
+          <img class="country__img" alt="">
+          <div class="country__wrapper">
+            <div class="country__information-title">
+              <h3 class="country__title">Франция</h3>
+              <p class="country__cite">Трэ бьен, манифик!</p>
+            </div>
+            <div class="country__visit">
+              <span class="country__number-of-people">12518</span>
+            </div>
+          </div>
+        </section>
+        <section class="country">
+          <img class="country__img" alt="">
+          <div class="country__wrapper">
+            <div class="country__information-title">
+              <h3 class="country__title">Чехия</h3>
+              <p class="country__cite">Закоулки старой Европы</p>
+            </div>
+            <div class="country__visit">
+              <span class="country__number-of-people">5326</span>
+            </div>
+          </div>
+        </section>
+        <button class="button-show">Показать все</button>
+      </section>
+      <section class="companion"> <!-- Блок с попутчиками -->
+        <h2 class="companion__title-companion">Попутчики</h2>
+        <p class="companion_paragraph-companion">
+          Все мы индивидуальны и у каждогосвой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+        </p>
+        <p class="companion_paragraph-companion-add">
+          Теперь можно легко найти единомышленников!
+        </p>
+        <section class="companion-people"> <!-- Отдельный блок с карточками попутчиков -->
+          <div class="companion-people__wrapper">
+            <div class="companion-people__level">
+              <span class="companion-people__number">99</span>
+              <span class="companion-people__text-level">level</span>
+            </div>
+            <img class="companion-people__img" src="" width="0px" height="0px" alt="Попутчик по имени Таня Фирсова.">
+          </div>
+          <div class="companion-people__infromation">
+            <ul class="companion-people__list-country">
+              <li class="companion-people__item-country">Страна номер 1</li>
+              <li class="companion-people__item-country">Страна номер 2</li>
+              <li class="companion-people__item-country">Страна номер 3</li>
+            </ul>
+            <h3 class="companion-people__name">Таня Фирсова</h3>
+            <p class="companion-people__tag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+            <ul class="companion-people__list-icon">
+              <li class="companion-people__item-icon">
+                <svg class="companion-people__plane-icon"></svg>
+              </li>
+              <li class="companion-people__item-icon">
+                <svg class="companion-people__auto-icon"></svg>
+              </li>
+              <li class="companion-people__item-icon">
+                <svg class="companion-people__bicyle-icon"></svg>
+              </li>
+              <li class="companion-people__item-icon">
+                <svg class="companion-people__run-icon"></svg>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="companion-people">  <!-- Отдельный блок с карточками попутчиков -->
+          <div class="companion-people__wrapper">
+            <div class="companion-people__level">
+              <span class="companion-people__number">80</span>
+              <span class="companion-people__text-level">level</span>
+            </div>
+            <img class="companion-people__img" src="" width="0px" height="0px" alt="Попутчик по имени Петя Демин.">
+          </div>
+          <div class="companion-people__infromation">
+            <ul class="companion-people__list-country">
+              <li class="companion-people__item-country">Страна номер 1</li>
+              <li class="companion-people__item-country">Страна номер 2</li>
+            </ul>
+            <h3 class="companion-people__name">Петя Демин</h3>
+            <p class="companion-people__tag">#бургер #бар #футбол #концерт #крафт</p>
+            <ul class="companion-people__list-icon">
+              <li class="companion-people__item-icon">
+                <svg class="companion-people__plane-icon"></svg>
+              </li>
+              <li class="companion-people__item-icon">
+                <svg class="companion-people__auto-icon"></svg>
+              </li>
+              <li class="companion-people__item-icon">
+                <svg class="companion-people__bicyle-icon"></svg>
+              </li>
+              <li class="companion-people__item-icon">
+                <svg class="companion-people__run-icon"></svg>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <button class="button-show">Показать всех</button>
+      </section>
+      <div class="rates">
+        <section class="business-tariff">
+          <h2 class="business-tariff__title">Добавьте свой профиль</h2>
+          <svg class="business-tariff__icon"></svg>
+          <table class="business-tariff__table-options">
+            <tr class="business-tariff__options-service">
+              <td class="business-tariff__trading">Базовое размещение
+                <span class="business-tariff__price">Бесплатно</span>
+                <span class="business-tariff__number-trading">1</span>
+              </td>
+            </tr>
+            <tr class="business-tariff__options-service">
+              <td class="business-tariff__trading">Вывод на первых позициях
+                <span class="business-tariff__price">99 руб./мес</span>
+                <span class="business-tariff__number-trading">2</span>
+              </td>
+            </tr>
+            <tr class="business-tariff__options-service">
+              <td class="business-tariff__trading">Кастомный цвет карточки
+                <span class="business-tariff__price">59 руб./мес</span>
+                <span class="business-tariff__number-trading">3</span>
+              </td>
+            </tr>
+          </table>
+          <button class="business-tariff__button-show-tariff">Показать тарифы для бизнеса</button>
+        </section>
+      </div>
     </main>
-
-    <footer class="page-footer">
-
+    <footer class="footer">
+      <p class="go-action">Погнали?</p>
+      <div class="social">
+        <ul class="social__list-social">
+          <li class="social__item-social"><svg class="social__icon"></svg>Facebook</li>
+          <li class="social__item-social"><svg class="social__icon"></svg>ВКонтакте</li>
+          <li class="social__item-social"><svg class="social__icon"></svg>Instagram</li>
+        </ul>
+      </div>
+      <div class="developer">
+        <p class="developer__text">Разработано</p>
+        <img class="developer__img" width="0" src="" height="0" alt="Логотип компании - HtmlAcademy">
+      </div>
     </footer>
   </body>
 </html>
