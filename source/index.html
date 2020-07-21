@@ -18,12 +18,8 @@
       </div>
       <div class="header__main-contacts"> <!-- Независимый блок главных контактов в шапке -->
         <ul class="header__list contacts-list">
-          <li class="contacts-list__item contacts-item">
-            <svg class="contacts-item__icon-phone"></svg>
-          </li>
-          <li class="contacts-list__item contacts-item">
-            <svg class="contacts-item__icon-email"></svg>
-          </li>
+          <li class="header__item contacts-item"></li>
+          <li class="header__item contacts-item"></li>
         </ul>
         <a class="button-authorization" href="#">Авторизация</a> <!--Независимая кнопка авторизации-->
       </div>
@@ -175,17 +171,26 @@
         </div>
       </section>
     </main>
-
-
     <footer class="footer">
       <a class="footer__link-logo">
           <img class="footer__logo" width="96" height="14" alt="Логотип компании Погнали?">
       </a>
       <div class="social"> <!-- Независимый блок -->
         <ul class="social__list">
-          <li class="social__item"><a class="social__link" href="#">Facebook</a></li>
-          <li class="social__item"><a class="social__link" href="#">ВКонтакте</a></li>
-          <li class="social__item"><a class="social__link" href="#">Instagram</a></li>
+          <li class="social__item">
+            <a class="social__link-fb" href="#">
+              <span class="visually-hiden">Страница в Facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link-vk" href="#">
+              <span class="visually-hiden">Страница в ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link-inst" href="#"><span class="visually-hiden">Страница в Instagram</span>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="developer">
