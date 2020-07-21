@@ -6,27 +6,41 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="menu-gamburger">
-        <p class="menu-gamburger__go-action">Погнали</p>
-        <svg class="menu-gamburger__icon"></svg>
+      <div class="navigation"> <!--Независимый блок-->
+        <a class="navigation__link-logo">
+          <img class="navigation__logo" width="96" height="15" alt="Логотип компании Погнали?">
+        </a>
+        <button class="navigation__gamburger">
+          <span class="visually-hiden">Открыть меню</span>
+        </button>
       </div>
-      <div class="page-link">
-        <a class="page-link__companion" href="#">Направления</a>
-      </div>
+      <h2 class="page-title">Попутчики</h2>
     </header>
-    <main class="main"></main>
     <footer class="footer">
-      <p class="go-action">Погнали?</p>
-      <div class="social">
-        <ul class="social__list-social">
-          <li class="social__item-social"><svg class="social__icon"></svg>Facebook</li>
-          <li class="social__item-social"><svg class="social__icon"></svg>ВКонтакте</li>
-          <li class="social__item-social"><svg class="social__icon"></svg>Instagram</li>
+      <a class="footer__link-logo">
+          <img class="footer__logo" width="96" height="15" alt="Логотип компании Погнали?">
+      </a>
+      <div class="social"> <!-- Независимый блок -->
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link-fb" href="#">
+              <span class="visually-hiden">Страница в Facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link-vk" href="#">
+              <span class="visually-hiden">Страница в ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link-inst" href="#"><span class="visually-hiden">Страница в Instagram</span>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="developer">
         <p class="developer__text">Разработано</p>
-        <img class="developer__img" width="0" src="" height="0" alt="Логотип компании - HtmlAcademy">
+        <img class="developer__img" width="27" src="" height="33" alt="Логотип компании - HtmlAcademy">
       </div>
     </footer>
   </body>
