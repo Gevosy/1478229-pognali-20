@@ -5,14 +5,10 @@
     <title>HTML Academy: Погнали</title>
   </head>
   <body class="page__body">
-
-
-
     <header class="header">
       <h1 class="visually-hiden">Сервис подбора попутчиков во все мире - Погнали?</h1>
       <h2 class="header__title">В путешествие с крутыми попутчиками!</h2>
-
-      <div class="header__navigation"> <!-- Независимый блок главного меню с логотипом и гамбургером -->
+      <div class="header__navigation">
         <a class="header__link-logo">
           <img class="header__logo" width="0" height="0" alt="Логотип компании Погнали?">
         </a>
@@ -20,7 +16,6 @@
           <span class="visually-hiden">Открыть меню</span>
         </button>
       </div>
-
       <div class="header__main-contacts"> <!-- Независимый блок главных контактов в шапке -->
         <ul class="header__list contacts-list">
           <li class="contacts-list__item contacts-item">
@@ -32,31 +27,25 @@
         </ul>
         <a class="button-authorization" href="#">Авторизация</a> <!--Независимая кнопка авторизации-->
       </div>
-
     </header>
-
-
     <main class="main">
       <section class="scheme">
-        <cite class="scheme__cite">«Лучшее приложение, что я видел в жизни!»</cite>
         <h2 class="scheme__title">Мурат Эльтазин главный редактор газеты «гаджетлайф»</h2>
-        <ul class="scheme__list roadmap-list">
-          <li class="roadmap-list__item">Выберите направление</li>
-          <li class="roadmap-list__item">Изучите идеи путешественников</li>
-          <li class="roadmap-list__item">Находите тех, кто похож на вас</li>
-          <li class="roadmap-list__item">Путешествуйте вместе!</li>
-        </ul>
-
-        <section class="scheme__serivce">
+        <cite class="scheme__cite">«Лучшее приложение, что я видел в жизни!»</cite>
+        <div class="scheme__roadmap">
+          <ul class="scheme__list roadmap-list">
+            <li class="roadmap-list__item">Выберите направление</li>
+            <li class="roadmap-list__item">Изучите идеи путешественников</li>
+            <li class="roadmap-list__item">Находите тех, кто похож на вас</li>
+            <li class="roadmap-list__item">Путешествуйте вместе!</li>
+          </ul>
+        </div>
+        <div class="scheme__serivce">
           <h3 class="scheme__title-serivce">О сервисе</h3>
           <p class="scheme__paragraph-service">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
           <p class="scheme__paragraph-serivce-add">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
-        </section>
-
+        </div>
       </section>
-
-
-
 
       <section class="route">
         <h2 class="route__title-route">Направления</h2>
@@ -87,7 +76,7 @@
           </div>
           <span class="country__visit">5326</span>
         </section>
-        <button class="button-show">Показать все</button>
+        <a class="button-show" href="form.html">Показать все</a>
       </section>
       <section class="companion"> <!-- Блок с попутчиками -->
         <h2 class="companion__title-companion">Попутчики</h2>
@@ -160,7 +149,7 @@
             </ul>
           </div>
         </section>
-        <button class="button-show">Показать всех</button>
+        <a class="button-show" href="catalog.html">Показать всех</a>
       </section>
       <div class="rates">
         <section class="business-tariff"> <!--Независимый блок-->
