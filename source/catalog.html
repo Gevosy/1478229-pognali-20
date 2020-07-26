@@ -6,18 +6,187 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="navigation"> <!--Независимый блок-->
-        <a class="logo">
+      <div class="navigation">
+        <a class="logo navigation__logo">
           <img class="logo__img" width="96" height="15" alt="Логотип компании Погнали?">
         </a>
-        <button class="navigation__gamburger">
+        <button class="burger navigation__burger">
           <span class="visually-hiden">Открыть меню</span>
         </button>
       </div>
       <h1 class="page-title">Попутчики</h1>
     </header>
     <main class="main">
-      <section class="travel"> <!-- Секция -->
+      <section class="filter">
+        <div class="filter-country filter__filter-country">
+          <p class="filter-country__text">Фильтрация по странам</p>
+          <button class="filter-country__button" type="button">
+            <span class="visually-hidden">Открыть фильтр по странам</span>
+          </button>
+          <div class="change-country country">
+              <ul class="change-country__list">
+                <li class="change-country__item">
+                  <a href="#" class="change-country__link">Европа</a>
+                </li>
+                <li class="change-country__item">
+                  <a href="#" class="change-country__link">Азия</a>
+                </li>
+                <li class="change-country__item">
+                  <a href="#" class="change-country__link">Америка</a>
+                </li>
+                <li class="change-country__item">
+                  <a href="#" class="change-country__link">Острова</a>
+                </li>
+              </ul>
+              <table class="alphabet change-country__alphabet">
+                <tr class="alphabet__rows">
+                  <td class="alphabet__columns choosing-letter"><a href="" class="alphabet__link">а</a></td>
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">б</a></td>
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">в</a></td>
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">г</a></td>
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">д</a></td>
+                </tr>
+                <tr class="alphabet__rows">
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">е</a></td>
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">з</a></td>
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">и</a></td>
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">к</a></td>
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">л</a></td>
+                </tr>
+                <tr class="alphabet__rows">
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">м</a></td>
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">н</a></td>
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">о</a></td>
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">п</a></td>
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">р</a></td>
+                </tr>
+                <tr class="alphabet__rows">
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">с</a></td>
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">т</a></td>
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">у</a></td>
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">ф</a></td>
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">х</a></td>
+                </tr>
+                <tr class="alphabet__rows">
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">ч</a></td>
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">ш</a></td>
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">э</a></td>
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">ю</a></td>
+                  <td class="alphabet__columns"><a href="" class="alphabet__link">я</a></td>
+                </tr>
+              </table>
+              <ul class="change-country__country-list">
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Австралия</a>
+                </li>
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Австрия</a>
+                </li>
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Азербайджан</a>
+                </li>
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Албания</a>
+                </li>
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Алжир</a>
+                </li>
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Ангола</a>
+                </li>
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Андора</a>
+                </li>
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Антигуа и Барбуда</a>
+                </li>
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Аргентина</a>
+                </li>
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Армения</a>
+                </li>
+                <li class="country-list__item">
+                  <a href="" class="country-list__link">Афганистан</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="select filter__select">
+          <h2 class="select__title">Подберите идеального попутчика</h2>
+          <form class="select__form" action="https://echo.htmlacademy.ru" method="GET">
+            <fieldset class="select__group">
+              <legend class="select__group-title">Хобби</legend>
+            </fieldset>
+            <fieldset class="select__group">
+              <legend class="select__group-title">Музыка</legend>
+              <ul class="select__list">
+                <li class="select__item">
+                  <input class="select__checkbox" type="checkbox" name="rock" id="rock">
+                  <label class="select__label" id="rock">Тяжелый рок</label>
+                </li>
+                <li class="select__item">
+                  <input class="select__checkbox" type="checkbox" name="russian-rap" id="russian-rap">
+                  <label class="select__label" id="russian-rap">Русский рэп</label>
+                </li>
+                <li class="select__item">
+                  <input class="select__checkbox" type="checkbox" name="eurodance" id="eurodance">
+                  <label class="select__label" id="eurodance">Евроденс</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="select__group">
+              <legend class="select__group-title">Еда</legend>
+            </fieldset>
+            <fieldset class="select__group">
+              <legend class="select__group-title">Транспорт</legend>
+              <ul class="select__list">
+                <li class="select__item">
+                  <input class="select__checkbox visually-hidden" type="checkbox" name="plane" id="plane">
+                  <label class="select__label select__label--plane" id="plane">Самолет</label>
+                </li>
+                <li class="select__item">
+                  <input class="select__checkbox visually-hidden" type="checkbox" name="bus" id="bus">
+                  <label class="select__label select__label--bus" id="bus">Автобус</label>
+                </li>
+                <li class="select__item">
+                  <input class="select__checkbox visually-hidden" type="checkbox" name="bicycle" id="bicycle">
+                  <label class="select__label select__label--bicycle" id="bicycle">Велосипед</label>
+                </li>
+                <li class="select__item">
+                  <input class="select__checkbox visually-hidden" type="checkbox" name="walking" id="walking">
+                  <label class="select__label select__label--walking" id="walking">Пешком</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="select__group">
+              <legend class="select__group-title">Левел</legend>
+              <div class="select__range">
+                <div class="select__range-controls">
+                  <span class="select__text visually-hidden">Выберите подходящий вам левел попутчика!</span>
+                  <div class="select__level-controls">
+                    <span class="visually-hidden">Минимальный левел</span>
+                    <label class="select__level select__level--min">
+                      <input type="number" name="min-level" step="50" value="30">
+                    </label>
+                    <span class="visually-hidden">Максимальный левел</span>
+                    <label class="select__level select__level--max">
+                      <input type="number" name="max-level" step="50" value="100">
+                    </label>
+                  </div>
+                  <div class="select__scale">
+                    <div class="select__bar"></div>
+                  </div>
+                  <button class="select__toggle select__toggle--min" type="button" aria-label="Минимальный левел"></button>
+                  <button class="select__toggle select__toggle--max" type="button" aria-label="Максимальный левел"></button>
+                </div>
+              </div>
+            </fieldset>
+            <button class="button" type="submit">Показать</button>
+          </form>
+        </div>
+      </section>
+      <section class="travel">
         <h2 class="visually-hiden">Выбери любого попутчика и путешествуй вместе!</h2>
         <article class="travel-companion">
           <div class="travel-companion__information">
@@ -256,29 +425,27 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="logo">
+      <a class="logo footer__logo">
         <img class="logo__img" width="96" height="15" alt="Логотип компании Погнали?">
       </a>
-      <div class="social"> <!-- Независимый блок -->
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="#">
-              <span class="visually-hidden">Страница в Facebook</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="#">
-              <span class="visually-hidden">Страница в ВКонтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--inst" href="#">
-              <span class="visually-hidden">Страница в Instagram</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <a class="developer" href="https://htmlacademy.ru/">
+      <ul class="social footer__developer">
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#">
+            <span class="visually-hidden">Страница в Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#">
+            <span class="visually-hidden">Страница в ВКонтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--inst" href="#">
+            <span class="visually-hidden">Страница в Instagram</span>
+          </a>
+        </li>
+      </ul>
+      <a class="developer footer__logo" href="https://htmlacademy.ru/">
         <p class="developer__text">Разработано</p>
         <img class="developer__img" width="27" src="" height="33" alt="Логотип компании - HtmlAcademy">
       </a>
