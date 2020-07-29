@@ -8,15 +8,15 @@
     <header class="header">
       <h1 class="visually-hidden">Сервис подбора попутчиков во всем мире - Погнали?</h1>
       <p class="header__text">В путешествие с крутыми попутчиками!</p>
-      <div class="navigation"> <!--Независимый блок-->
-        <a class="logo">
+      <div class="navigation header__navigation">
+        <a class="logo navigation__logo">
           <img class="logo__img" width="96" height="15" alt="Логотип компании Погнали?">
         </a>
-        <button class="navigation__gamburger">
+        <button class="burger navigation__burger">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <div class="header__main-contacts"> <!-- Независимый блок главных контактов в шапке -->
+      <div class="header__main-contacts">
         <ul class="header__list">
           <li class="header__item">
             <span class="visually-hidden">Телефон компании</span>
@@ -27,11 +27,11 @@
             <a class="header__link header__link--email" href="mailto:htmlacademy@mail.ru"></a>
           </li>
         </ul>
-        <a class="button-authorization" href="#">Авторизация</a> <!--Независимая кнопка авторизации-->
+        <a class="button button--authorization" href="#">Авторизация</a>
       </div>
     </header>
     <main class="main">
-      <section class="scheme"> <!-- Независимый блок -->
+      <section class="scheme">
         <div class="scheme__roadmap">
           <blockquote class="scheme__quote">
             <p class="scheme__text">«Лучшее приложение, что я видел в жизни!»</p>
@@ -50,7 +50,7 @@
           <p class="scheme__paragraph-serivce-add">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
         </div>
       </section>
-      <section class="route">
+      <section class="route"> <!--Секция со страннами-->
         <h2 class="route__title-route">Направления</h2>
         <p class="route__paragraph-route">
           Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
@@ -79,13 +79,13 @@
           </div>
           <span class="country__visit">5326</span>
         </article>
-        <a class="button-show" href="#">Показать все</a> <!-- Перепроверить ТЗ -->
+        <a class="button" href="#">Показать все</a> <!-- Перепроверить ТЗ -->
       </section>
       <section class="companion"> <!-- Секция с попутчиками -->
         <h2 class="companion__title">Попутчики</h2>
         <p class="companion__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
         <p class="companion__description-add">Теперь можно легко найти единомышленников!</p>
-        <article class="user-card">
+        <article class="user-card"> <!--Карточка 2-->
           <a class="user-card__link">
             <img class="user-card__img" src="" width="270" height="270" alt="Попутчик по имени Таня Фирсова. Погнали?">
           </a>
@@ -166,17 +166,45 @@
             </li>
           </ul>
         </article>
-        <a class="button-show" href="catalog.html">Показать всех</a>
+        <a class="button" href="catalog.html">Показать всех</a>
       </section>
-      <section class="business">
-        <div class="business-tariff"> <!--Независимый блок-->
+      <section class="business-tariff">
           <h2 class="business-tariff__title">Добавьте свой профиль</h2>
           <ul class="business-tariff__list">
             <li class="business-tariff__item">Базовое размещение <span class="business-tariff__price">Бесплатно</span></li>
             <li class="business-tariff__item">Вывод на первых позициях <span class="business-tariff__price">99 руб./мес</span></li>
             <li class="business-tariff__item">Кастомный цвет карточки <span class="business-tariff__price">59 руб./мес</span></li>
           </ul>
-          <a class="business-tariff__button-show-tariff" href="#">Показать тарифы для бизнеса</a>
+          <a class="button button--tariff" href="#">Показать тарифы для бизнеса</a>
+        </div>
+      </section>
+      <section class="registation">
+        <h2 class="registation__title">Заинтересовались?</h2>
+        <p class="registation__text">Зарегистрируйтесь, это быстрой и бесплатно! Уже зарегистрированы? Тогда скорее <a class="registation__link-auth" href="#">авторизуйтесь.</a></p>
+        <form class="registation__email" action="https://echo.htmlacademy.ru" method="POST">
+          <label class="visually-hidden" for="email">Форма для внесение электронной почты</label>
+          <input class="registation__email-input" type="email" name="email" id="email" placeholder="E-mail" aria-label="Введите свою электронную почту">
+          <button class="button button--registation" type="submit" arial-label="Регистрация"></button>
+        </form>
+        <p class="registation__callback">Остались вопросы? Мы с радостью на них ответим!</p>
+        <div class="contacts registation__contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <span class="visually-hidden">Телефон</span>
+              <a class="contacts__link contacts__link--tel" href="tel:88005558628">8 800 555-86-28</a>
+            </li>
+            <li class="contacts__item">
+              <span class="visually-hidden">Почта</span>
+              <a class="contacts__link contacts__link--email" href="mailto:htmlacademy@mail.ru">mail@htmtlacademy.ru</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="adress">
+        <address class="adress__point">ул. Большая Конюшенная, 19/8</address>
+        <a class="button button--maps" href="https://yandex.ru/maps/-/CKaqv4Jj">Проложить маршрут</a>
+        <div class="map adress__map">
+          <iframe src="https://yandex.ru/map-widget/v1/-/CCQlnMXTLB" width="100%" height="424" frameborder="0" allowfullscreen="true"></iframe>
         </div>
       </section>
     </main>
@@ -184,28 +212,26 @@
       <a class="logo">
         <img class="logo__img" width="96" height="15" alt="Логотип компании Погнали?">
       </a>
-      <div class="social"> <!-- Независимый блок -->
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="#">
-              <span class="visually-hidden">Страница в Facebook</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="#">
-              <span class="visually-hidden">Страница в ВКонтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--inst" href="#">
-              <span class="visually-hidden">Страница в Instagram</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#">
+            <span class="visually-hidden">Страница в Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#">
+            <span class="visually-hidden">Страница в ВКонтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--inst" href="#">
+            <span class="visually-hidden">Страница в Instagram</span>
+          </a>
+        </li>
+      </ul>
       <a class="developer" href="https://htmlacademy.ru/">
         <p class="developer__text">Разработано</p>
-        <img class="developer__img" width="27" src="" height="33" alt="Логотип компании - HtmlAcademy">
+        <img class="academy developer__academy" width="27" src="" height="33" alt="Логотип компании - HtmlAcademy">
       </a>
     </footer>
   </body>
