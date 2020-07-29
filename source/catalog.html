@@ -24,7 +24,7 @@
             <span class="visually-hidden">Открыть фильтр по странам</span>
           </button>
           <div class="change-country filter__change-country">
-            <ul class="continent change-country__continent"> <!-- Континенты -->
+            <ul class="continent change-country__continent">
               <li class="continent__item">
                 <a href="#" class="continent__link">Европа</a>
               </li>
@@ -163,15 +163,15 @@
               <ul class="select__list">
                 <li class="select__item">
                   <input class="select__checkbox" type="checkbox" name="rock" id="rock">
-                  <label class="select__label" id="rock">Тяжелый рок</label>
+                  <label class="select__label" for="rock">Тяжелый рок</label>
                 </li>
                 <li class="select__item">
                   <input class="select__checkbox" type="checkbox" name="russian-rap" id="russian-rap">
-                  <label class="select__label" id="russian-rap">Русский рэп</label>
+                  <label class="select__label" for="russian-rap">Русский рэп</label>
                 </li>
                 <li class="select__item">
                   <input class="select__checkbox" type="checkbox" name="eurodance" id="eurodance">
-                  <label class="select__label" id="eurodance">Евроденс</label>
+                  <label class="select__label" for="eurodance">Евроденс</label>
                 </li>
               </ul>
             </fieldset>
@@ -180,22 +180,22 @@
             </fieldset>
             <fieldset class="select__group">
               <legend class="select__group-title">Транспорт</legend>
-              <ul class="select__list">
-                <li class="select__item">
-                  <input class="select__checkbox visually-hidden" type="checkbox" name="plane" id="plane">
-                  <label class="select__label select__label--plane" id="plane">Самолет</label>
+              <ul class="transport select__transport">
+                <li class="transport__item">
+                  <input class="transport__checkbox visually-hidden" type="checkbox" name="plane" id="plane">
+                  <label class="transport__label transport__label--plane" for="plane">Самолет</label>
                 </li>
-                <li class="select__item">
-                  <input class="select__checkbox visually-hidden" type="checkbox" name="bus" id="bus">
-                  <label class="select__label select__label--bus" id="bus">Автобус</label>
+                <li class="transport__item">
+                  <input class="transport__checkbox visually-hidden" type="checkbox" name="bus" id="bus">
+                  <label class="transport__label transport__label--bus" for="bus">Автобус</label>
                 </li>
-                <li class="select__item">
-                  <input class="select__checkbox visually-hidden" type="checkbox" name="bicycle" id="bicycle">
-                  <label class="select__label select__label--bicycle" id="bicycle">Велосипед</label>
+                <li class="transport__item">
+                  <input class="transport__checkbox visually-hidden" type="checkbox" name="bicycle" id="bicycle">
+                  <label class="transport__label transport__label--bicycle" for="bicycle">Велосипед</label>
                 </li>
-                <li class="select__item">
-                  <input class="select__checkbox visually-hidden" type="checkbox" name="walking" id="walking">
-                  <label class="select__label select__label--walking" id="walking">Пешком</label>
+                <li class="transport__item">
+                  <input class="transport__checkbox visually-hidden" type="checkbox" name="walking" id="walking">
+                  <label class="transport__label transport__label--walking" for="walking">Пешком</label>
                 </li>
               </ul>
             </fieldset>
@@ -261,22 +261,18 @@
           </div>
           <div class="travel-companion__skills">
             <p class="travel-companion__text">Транспорт</p>
-            <ul class="travel-companion__list-transport">
-              <li class="travel-companion__item-transport">
+            <ul class="transport transport__travel-companion">
+              <li class="transport__item transport__item--plane">
                 <span class="visually-hiden">Авиаперелет</span>
-                <svg class="travel-companion__icon"></svg>
               </li>
-              <li class="travel-companion__item-transport">
+              <li class="transport__item transport__item--bus">
                 <span class="visually-hiden">Автотранспорт</span>
-                <svg class="travel-companion__icon"></svg>
               </li>
-              <li class="travel-companion__item-transport">
+              <li class="transport__item transport__item--bycicle">
                 <span class="visually-hiden">Велосипед</span>
-                <svg class="travel-companion__icon"></svg>
               </li>
-              <li class="travel-companion__item-transport">
+              <li class="transport__item transport__item--walking">
                 <span class="visually-hiden">Пешком</span>
-                <svg class="travel-companion__icon"></svg>
               </li>
             </ul>
             <span class="travel-companion__text">level</span>
@@ -314,22 +310,18 @@
           </div>
           <div class="travel-companion__skills">
             <p class="travel-companion__text">Транспорт</p>
-            <ul class="travel-companion__list-transport">
-              <li class="travel-companion__item-transport">
+            <ul class="transport transport__travel-companion">
+              <li class="transport__item transport__item--plane">
                 <span class="visually-hiden">Авиаперелет</span>
-                <svg class="travel-companion__icon"></svg>
               </li>
-              <li class="travel-companion__item-transport">
+              <li class="transport__item transport__item--bus">
                 <span class="visually-hiden">Автотранспорт</span>
-                <svg class="travel-companion__icon"></svg>
               </li>
-              <li class="travel-companion__item-transport">
+              <li class="transport__item transport__item--bycicle">
                 <span class="visually-hiden">Велосипед</span>
-                <svg class="travel-companion__icon"></svg>
               </li>
-              <li class="travel-companion__item-transport">
+              <li class="transport__item transport__item--walking">
                 <span class="visually-hiden">Пешком</span>
-                <svg class="travel-companion__icon"></svg>
               </li>
             </ul>
             <span class="travel-companion__text">level</span>
@@ -371,22 +363,18 @@
           </div>
           <div class="travel-companion__skills">
             <p class="travel-companion__text">Транспорт</p>
-            <ul class="travel-companion__list-transport">
-              <li class="travel-companion__item-transport">
+            <ul class="transport transport__travel-companion">
+              <li class="transport__item transport__item--plane">
                 <span class="visually-hiden">Авиаперелет</span>
-                <svg class="travel-companion__icon"></svg>
               </li>
-              <li class="travel-companion__item-transport">
+              <li class="transport__item transport__item--bus">
                 <span class="visually-hiden">Автотранспорт</span>
-                <svg class="travel-companion__icon"></svg>
               </li>
-              <li class="travel-companion__item-transport">
+              <li class="transport__item transport__item--bycicle">
                 <span class="visually-hiden">Велосипед</span>
-                <svg class="travel-companion__icon"></svg>
               </li>
-              <li class="travel-companion__item-transport">
+              <li class="transport__item transport__item--walking">
                 <span class="visually-hiden">Пешком</span>
-                <svg class="travel-companion__icon"></svg>
               </li>
             </ul>
             <span class="travel-companion__text">level</span>
@@ -424,22 +412,18 @@
           </div>
           <div class="travel-companion__skills">
             <p class="travel-companion__text">Транспорт</p>
-            <ul class="travel-companion__list-transport">
-              <li class="travel-companion__item-transport">
+            <ul class="transport transport__travel-companion">
+              <li class="transport__item transport__item--plane">
                 <span class="visually-hiden">Авиаперелет</span>
-                <svg class="travel-companion__icon"></svg>
               </li>
-              <li class="travel-companion__item-transport">
+              <li class="transport__item transport__item--bus">
                 <span class="visually-hiden">Автотранспорт</span>
-                <svg class="travel-companion__icon"></svg>
               </li>
-              <li class="travel-companion__item-transport">
+              <li class="transport__item transport__item--bycicle">
                 <span class="visually-hiden">Велосипед</span>
-                <svg class="travel-companion__icon"></svg>
               </li>
-              <li class="travel-companion__item-transport">
+              <li class="transport__item transport__item--walking">
                 <span class="visually-hiden">Пешком</span>
-                <svg class="travel-companion__icon"></svg>
               </li>
             </ul>
             <span class="travel-companion__text">level</span>

@@ -29,29 +29,28 @@
           </div>
           <input class="profile__change-photo visually-hidden" type="file" name="photo" id="photo">
           <label class="profile__label" for="photo">Сменить фото</label>
-          <fieldset class="profile__hast-tag"> <!--Подумать-->
-            <legend class="profile__title">Тэги</legend>
-            <label class="profile__label visually-hidden" for="hash-tag">Описание тэгов</label>
+          <div class="profile__hast-tag"> <!--Подумать-->
+            <label class="profile__label" for="hash-tag">Тэги</label>
             <textarea class="profile__description-tag" id="hast-tag">#бургер #бар #футбол #концерт #крафт</textarea>
-          </fieldset>
+          </div>
           <fieldset class="profile__movement">
             <legend class="profile__title">Транспорт</legend>
-            <ul class="select select__list"> <!--Иконки реализовать как отдельный блок (НЕ ЗАБЫТЬ)-->
-              <li class="select__item">
-                <input class="select__checkbox visually-hidden" type="checkbox" name="plane" id="plane">
-                <label class="select__label select__label--plane" for="plane">Самолет</label>
+            <ul class="transport profile__transport">
+              <li class="transport__item">
+                <input class="transport__checkbox visually-hidden" type="checkbox" name="plane" id="plane">
+                <label class="transport__label transport__label--plane" id="plane">Самолет</label>
               </li>
-              <li class="select__item">
-                <input class="select__checkbox visually-hidden" type="checkbox" name="bus" id="bus">
-                <label class="select__label select__label--bus" for="bus">Автобус</label>
+              <li class="transport__item">
+                <input class="transport__checkbox visually-hidden" type="checkbox" name="bus" id="bus">
+                <label class="transport__label transport__label--bus" id="bus">Автобус</label>
               </li>
-              <li class="select__item">
-                <input class="select__checkbox visually-hidden" type="checkbox" name="bicycle" id="bicycle">
-                <label class="select__label select__label--bicycle" for="bicycle">Велосипед</label>
+              <li class="transport__item">
+                <input class="transport__checkbox visually-hidden" type="checkbox" name="bicycle" id="bicycle">
+                <label class="transport__label transport__label--bicycle" id="bicycle">Велосипед</label>
               </li>
-              <li class="select__item">
-                <input class="select__checkbox visually-hidden" type="checkbox" name="walking" id="walking">
-                <label class="select__label select__label--walking" for="walking">Пешком</label>
+              <li class="transport__item">
+                <input class="transport__checkbox visually-hidden" type="checkbox" name="walking" id="walking">
+                <label class="transport__label transport__label--walking" id="walking">Пешком</label>
               </li>
             </ul>
           </fieldset>
@@ -115,62 +114,62 @@
                     <th class="calendar__head">с</th>
                     <th class="calendar__head">ч</th>
                     <th class="calendar__head">п</th>
-                    <th class="calendar__head weekend">с</th>
-                    <th class="calendar__head weekend">в</th>
+                    <th class="calendar__head calendar__head--weekend">с</th>
+                    <th class="calendar__head calendar__head--weekend">в</th>
                   </tr>
                   <tr class="calendar__rows">
-                    <td class="calendar__columns"><a href="#" class="calendar__link">23</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">24</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">25</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">26</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">27</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">28</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">1</a></td>
+                    <td class="calendar__columns"><a class="calendar__link"></a>23</a></td>
+                    <td class="calendar__columns"><a class="calendar__link"></a>24</a></td>
+                    <td class="calendar__columns"><a class="calendar__link"></a>25</a></td>
+                    <td class="calendar__columns"><a class="calendar__link"></a>26</a></td>
+                    <td class="calendar__columns"><a class="calendar__link"></a>27</a></td>
+                    <td class="calendar__columns"><a class="calendar__link"></a>28</a></td>
+                    <td class="calendar__columns"><a class="calendar__link"></a>1</a></td>
                   </tr>
                   <tr class="calendar__rows">
-                    <td class="calendar__columns"><a href="#" class="calendar__link">2</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">3</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">4</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">5</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">6</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">7</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">8</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">2</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">3</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">4</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">5</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">6</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">7</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">8</a></td>
                   </tr>
                   <tr class="calendar__rows">
-                    <td class="calendar__columns"><a href="#" class="calendar__link">9</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">10</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">11</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">12</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">13</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">14</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">15</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">9</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">10</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">11</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">12</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">13</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">14</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">15</a></td>
                   </tr>
                   <tr class="calendar__rows">
-                    <td class="calendar__columns"><a href="#" class="calendar__link">16</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">17</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">18</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">19</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">20</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">21</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">22</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">16</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">17</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">18</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">19</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">20</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">21</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">22</a></td>
                   </tr>
                   <tr class="calendar__rows">
-                    <td class="calendar__columns"><a href="#" class="calendar__link">23</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">24</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link">25</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link choosing-day">26</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link choosing-day">27</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link choosing-day">28</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link enable-day">29</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">23</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">24</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">25</a></td>
+                    <td class="calendar__columns"><a href="#" class="calendar__link calendar__link--choosing">26</a></td>
+                    <td class="calendar__columns"><a href="#" class="calendar__link calendar__link--choosing">27</a></td>
+                    <td class="calendar__columns"><a href="#" class="calendar__link calendar__link--choosing">28</a></td>
+                    <td class="calendar__columns"><a href="#" class="calendar__link calendar__link--enable-day">29</a></td>
                   </tr>
                   <tr class="calendar__rows">
-                    <td class="calendar__columns"><a href="#" class="calendar__link enable-day">30</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link enable-day">31</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link enable-day">1</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link enable-day">2</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link enable-day">3</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link enable-day">4</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link enable-day">5</a></td>
+                    <td class="calendar__columns"><a href="#" class="calendar__link calendar__link--enable-day">30</a></td>
+                    <td class="calendar__columns"><a href="#" class="calendar__link calendar__link--enable-day">31</a></td>
+                    <td class="calendar__columns"><a href="#" class="calendar__link calendar__link--enable-day">1</a></td>
+                    <td class="calendar__columns"><a href="#" class="calendar__link calendar__link--enable-day">2</a></td>
+                    <td class="calendar__columns"><a href="#" class="calendar__link calendar__link--enable-day">3</a></td>
+                    <td class="calendar__columns"><a href="#" class="calendar__link calendar__link--enable-day">4</a></td>
+                    <td class="calendar__columns"><a href="#" class="calendar__link calendar__link--enable-day">5</a></td>
                   </tr>
                 </table>
               </div>
