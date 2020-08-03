@@ -7,18 +7,23 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <nav class="menu">
-        <a class="logo menu__logo">
-          <img class="logo__img" width="96" height="15" alt="Логотип компании Погнали?">
+      <nav class="menu header__menu">
+        <a class="logo menu__logo" href="index.html">
+          <img class="logo__img" src="img/logo-mobile-white@1x.png" width="96" height="15" alt="Логотип компании Погнали?">
         </a>
         <button class="burger menu__burger">
-          <span class="visually-hiden">Открыть меню</span>
+          <span class="visually-hidden">Открыть меню</span>
         </button>
       </nav>
       <h1 class="page-title header__page-title">Направления</h1>
     </header>
     <main class="main">
       <form class="profile-form" action="https://echo.htmlacademy.ru" method="POST"> <!-- Форма всего -->
+
+
+
+
+
         <section class="profile"> <!-- Блок 1 ПРОФИЛЬ-->
           <h2 class="visually-hidden">Мой профиль</h2>
           <div class="profile__face">
@@ -28,12 +33,17 @@
             </div>
             <img class="profile__img" src="https://via.placeholder.com/100x100" width="100" height="100" alt="Попутчик по имени Петя Демин. Погнали?">
           </div>
+
+
           <input class="profile__change-photo visually-hidden" type="file" name="photo" id="photo">
           <label class="profile__label" for="photo">Сменить фото</label>
+
           <div class="profile__hast-tag"> <!--Подумать-->
             <label class="profile__label" for="hash-tag">Тэги</label>
             <textarea class="profile__description-tag" id="hast-tag">#бургер #бар #футбол #концерт #крафт</textarea>
           </div>
+
+
           <fieldset class="profile__movement">
             <legend class="profile__title">Транспорт</legend>
             <ul class="transport profile__transport">
@@ -56,24 +66,33 @@
             </ul>
           </fieldset>
         </section>
+
+
+
+
         <section class="my-plan"> <!-- Блок  2  МОИ ПЛАНЫ-->
+          <h2 class="planing-title">Мои планы</h2>
           <ol class="my-plan__list">
-            <li class="my-plan__item"> Франция, Италия
+            <li class="my-plan__item">1. Франция, Италия
               <div class="my-plan__information">
-                <p class="my-plan__number-companion">3 попутчика</p>
-                <p class="my-plan__date-days">26 мар - 29 мар</p>
+                <p class="my-plan__number-companion my-plan--number-days">3 попутчика</p>
+                <p class="my-plan__date-days my-plan--number-days">26 мар - 29 мар</p>
               </div>
               <a class="my-plan__link" href="#">Изменить</a></li>
             </li>
-            <li class="my-plan__item"> Таиланд, Индонезия
+            <li class="my-plan__item">2. Таиланд, Индонезия
               <div class="my-plan__information">
-                <p class="my-plan__number-companion">1 попутчик</p>
-                <p class="my-plan__date-days">1 июл - 15 июл</p>
+                <p class="my-plan__number-companion my-plan--number-days">1 попутчик</p>
+                <p class="my-plan__date-days my-plan--number-days">1 июл - 15 июл</p>
               </div>
               <a class="my-plan__link" href="#">Изменить</a></li>
             </li>
           </ol>
         </section>
+
+
+
+
         <section class="parametrs">
           <h2 class="planing-title" id="first">Добавить план</h2>
           <div class="first-step parametrs__step"> <!--ШАГ 1 -->
@@ -84,28 +103,28 @@
               Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
             </p>
               <div class="parameters__amout-companion">
-                <label class="parameters__label" for="companiom">Ищу попутчиков:
-                  <span class="parameters__sub">Чел.</span>
+                <label class="parametrs__label" for="companiom">Ищу попутчиков:
+                  <span class="parametrs__sub-mini">Чел.</span>
                 </label>
-                <input class="parameters__number" type="number" name="companion" id="companiom">
-                <div class="parameters__controls">
+                <input class="parametrs__number" type="number" name="companion" id="companiom">
+                <div class="parametrs__controls">
                   <button class="parameters__button parametrs__button--decrease" type="button" aria-label="Уменьшить"></button>
                   <button class="parameters__button parametrs__button--increase" type="button" aria-label="Увеличить"></button>
                 </div>
               </div>
-              <div class="parameters__amout-days">
-                <label class="parameters__label" for="days">Длительность:
-                  <span class="parameters__sub">Дн.</span>
+              <div class="parametrs__amout-days">
+                <label class="parametrs__label" for="days">Длительность:
+                  <span class="parametrs__sub-mini">Дн.</span>
                 </label>
-                <input class="parameters__number" type="number" name="days" id="days">
-                <div class="parameters__controls">
-                  <button class="parameters__button parametrs__button--decrease" type="button" aria-label="Уменьшить"></button>
-                  <button class="parameters__button parametrs__button--increase" type="button" aria-label="Увеличить"></button>
+                <input class="parametrs__number" type="number" name="days" id="days">
+                <div class="parametrs__controls">
+                  <button class="parametrs__button parametrs__button--decrease" type="button" aria-label="Уменьшить"></button>
+                  <button class="parametrs__button parametrs__button--increase" type="button" aria-label="Увеличить"></button>
                 </div>
               </div>
-              <div class="parameters__additionally">
+              <div class="parametrs__additionally">
                 <input class="parametrs__checkbox" type="checkbox" name="children" id="children">
-                <label class="parametrs__label" for="children">Можно с детьми</label>
+                <label class="parametrs__label parametrs__label--children" for="children">Можно с детьми</label>
               </div>
               <div class="calendar parameters__calendar">
                 <table class="calendar__table">
@@ -174,13 +193,13 @@
                   </tr>
                 </table>
               </div>
-            <a class="button button--step" href="#second">Следующий шаг</a>
+            <a class="first-group-buttons first-group-buttons--step" href="#second">Следующий шаг</a>
           </div>
           <div class="second-step parametrs__step"> <!--ШАГ 2 -->
             <h3 class="parametrs__title" id="second">Шаг 2.
               <span class="parametrs__sub">Маршрут</span>
             </h3>
-            <p class="parametrs-paragraph"> Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+            <p class="parametrs__paragraph"> Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
             <button class="parametrs__country country-first" type="button">Босния и Грецеговина</button>
             <button class="parametrs__country country-second" type="button">Чехия</button>
             <button class="parametrs__country parametrs__country--change" type="button">Выберите страну</button>
@@ -299,14 +318,14 @@
               </ul>
             </div>
             <button class="button button--add-country" type="button">Добавить страну</button>
-            <a class="button button--step" href="#third">Следующий шаг</a>
-            <a class="button button--step button--back" href="#first">На шаг назад</a>
+            <a class="first-group-buttons first-group-buttons--step" href="#third">Следующий шаг</a>
+            <a class="buttons-show-back" href="#first">На шаг назад</a>
           </div>
           <div class="third-step parametrs__step"> <!--ШАГ 3 -->
             <h3 class="parametrs__title" id="third">Шаг 3.
               <span class="parametrs__sub">Развлечение</span>
             </h3>
-            <p class="parametrs-paragraph">
+            <p class="parametrs__paragraph">
               Наконец, расскажите о своих планах время провождения. Можно писать в свободной форме и ставить тэги.
             </p>
             <label class="parametrs__label parametrs__label--first-step" for="plan-action">Босния и Грецеговина</label>
@@ -316,15 +335,15 @@
             <textarea class="parametrs__plan-action" name="plan-action" id="plan-action">
               Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
             </textarea>
-            <button class="button button--send" type="submit">Отправить</button>
-            <a class="button button--step" href="#second">На шаг назад</a>
+            <button class="buttons-show-back buttons-show-back--send--yellow" type="submit">Отправить</button>
+            <a class="buttons-show-back" href="#second">На шаг назад</a>
           </div>
         </section>
       </form>
     </main>
     <footer class="footer">
       <a class="logo footer__logo">
-        <img class="logo__img" width="96" height="15" alt="Логотип компании Погнали?">
+        <img class="logo__img" src="img/logo-mobile-blue@1x.png" width="96" height="15" alt="Логотип компании Погнали?">
       </a>
       <ul class="social footer__social">
         <li class="social__item">
@@ -343,9 +362,9 @@
           </a>
         </li>
       </ul>
-      <a class="developer footer__developer" href="https://htmlacademy.ru/">
+      <a class="developer" href="https://htmlacademy.ru/">
         <p class="developer__text">Разработано</p>
-        <img class="academy developer__academy" width="27" src="" height="33" alt="Логотип компании - HtmlAcademy">
+        <img class="academy developer__academy" src="img/htmlacademy.svg" width="27" height="33" alt="Логотип компании - HtmlAcademy">
       </a>
     </footer>
   </body>

@@ -1,0 +1,71 @@
+.my-plan {
+  background-color: $specialLight;
+  padding-top: 28px;
+  padding-bottom: 60px;
+  margin-top: 34px;
+}
+
+.my-plan__list {
+  color: $specialBlueLight;
+  list-style: none;
+  width: 270px;
+  min-height: 154px;
+  padding: 0;
+  margin: 0;
+}
+
+.my-plan__item {
+  background-color: $white;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+
+  padding: 23px;
+  margin-bottom: 10px;
+
+  border-radius: 15px;
+}
+
+.my-plan__item:last-child {
+  margin-bottom: 0;
+}
+
+.my-plan__number-companion,
+.my-plan__date-days,
+.my-plan__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+
+  padding: 0;
+  margin: 0;
+}
+
+.my-plan__information {
+  margin-top: 20px;
+}
+
+.my-plan__information .my-plan--number-days:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.my-plan__link {
+  display: block;
+  color: $black;
+  margin-top: 24px;
+
+  text-transform: uppercase;
+  opacity: 0.3;
+  &:hover {
+    opacity: 0.5;
+
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+

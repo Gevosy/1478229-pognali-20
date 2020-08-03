@@ -1,0 +1,80 @@
+.scheme {
+  background-color: #192144;
+}
+
+.scheme__roadmap-action {
+  background-color: $basicBlue;
+  padding-top: 48px;
+}
+
+.scheme__01 {
+  background-color: $basicSchemeT;
+}
+
+.scheme__quote {
+  color: $white;
+}
+
+.scheme__text,
+.scheme__quote {
+  padding: 0;
+  margin: 0;
+}
+
+.scheme__quote {
+  margin-bottom: 29px;
+  width: 161px;
+}
+
+.scheme__text,
+.scheme__main-editor {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.scheme__main-editor {
+  font-weight: bold;
+}
+
+.scheme__text {
+  margin-bottom: 18px;
+}
+
+.scheme__service {
+  background-color: $basicBlueService;
+  background-image: url("../img/about-mobile@1x.png");
+  background-repeat: no-repeat;
+  padding-top: 33px;
+  padding-bottom: 90px;
+}
+
+.scheme__title-serivce {
+  color: $specialOrange;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+.scheme__paragraph-service,
+.scheme__paragraph-serivce-add {
+  color: $white;
+  width: 209px;
+  padding: 0;
+  margin: 0;
+}
+
+.scheme__paragraph-service {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.scheme__paragraph-serivce-add {
+  font-weight: bold;
+}

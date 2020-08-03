@@ -1,0 +1,28 @@
+.button-authorization {
+  display: block;
+
+  background-color: $basicYellow;
+  color: $specialBlueLight;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  border-radius: 25px;
+  padding: 12px 20px;
+
+  &:hover {
+    background-color: $specialYellowDark;
+    transition: 0.3s;
+  }
+
+  &:active {
+    color:rgba(29, 46, 91, 0.3);
+    opacity: 1;
+  }
+
+}

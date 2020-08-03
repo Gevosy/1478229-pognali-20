@@ -1,0 +1,58 @@
+.travel-companion {
+  background-color: $white;
+
+  width: 270px;
+  min-height: 415px;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+
+  border-radius: 15px;
+}
+
+.travel-companion__img {
+  border-radius: 50%;
+}
+
+.travel-companion__name {
+  display: block;
+
+  color: $specialBlueLight;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.travel-companion__like {
+  color: $basicBlue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.travel-companion__hash-tag {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.travel-companion__text {
+  color: $specialGrey;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+}
+
+.travel-companion__sub-country {
+  color: $specialBlueLight;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+}

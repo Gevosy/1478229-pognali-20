@@ -1,0 +1,49 @@
+.country {
+  width: 270px;
+  min-height: 190px;
+}
+
+.country__img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+}
+
+.country__information {
+  background-color: $white;
+  min-height: 49px;
+  padding: 24px;
+  margin-top: -15px;
+  border-radius: 15px;
+}
+
+.country__title,
+.country__cite {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  padding: 0;
+  margin: 0;
+}
+
+.country__cite {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: $specialGrey;
+}
+
+.country__visit {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basicScheme;
+}
+
+.country__cite,
+.country__visit {
+  opacity: 0.3;
+}

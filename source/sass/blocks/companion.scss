@@ -1,0 +1,50 @@
+.companion {
+  background-color: $basicSchemeT;
+  padding-top: 60px;
+  padding-bottom: 31px;
+  background-image: url("../img/smolov-back-desktop@1x.png");
+  background-repeat: no-repeat;
+}
+
+.companion__title,
+.companion__description,
+.companion__description-add {
+  padding: 0;
+  margin: 0;
+}
+
+.companion__title {
+  color: $specialOrange;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 21px;
+}
+
+.companion__description,
+.companion__description-add {
+  color: $white;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.companion__description {
+  width: 217px;
+}
+
+.companion__description-add {
+  font-weight: bold;
+  width: 197px;
+  margin-top: 23px;
+}
+
+.companion__user-card {
+  margin-bottom: 10px;
+}
+
+.companion__user-card:nth-of-type(1) {
+  margin-top: 54px;
+}

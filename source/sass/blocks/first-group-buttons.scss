@@ -1,0 +1,54 @@
+.first-group-buttons {
+  display: block;
+  color: $specialBlueLight;
+  background-color: $basicYellow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+
+  border-radius: 20px;
+
+  &:hover {
+    background-color: $specialYellowDark;
+    transition: 0.3s;
+  }
+
+  &:active {
+    color:rgba(29, 46, 91, 0.3);
+    opacity: 1;
+  }
+
+  &--show {
+    background-color: $basicYellow;
+    padding: 23px;
+  }
+
+  &--step {
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 7px 10px;
+  }
+
+  &--point {
+    border: 3px solid $basicSchemeT;
+    background-color: transparent;
+    padding: 22px;
+
+    &:hover {
+      background-color: $basicSchemeT;
+      color: white;
+      transition: 0.3s;
+    }
+
+    &:active {
+      background-color: $basicSchemeT;
+      color: rgba(255, 255, 255, 0.3);
+      opacity: 1;
+    }
+  }
+
+}
+

@@ -1,0 +1,37 @@
+.route {
+  background-color: $basicLight;
+  padding-top: 71px;
+  padding-bottom: 31px;
+}
+
+.route__title-route,
+.route__paragraph-route {
+  padding: 0;
+  margin: 0;
+}
+
+.route__title-route {
+  color: $specialOrange;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.route__paragraph-route {
+  color: $specialGrey;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  width: 198px;
+}
+
+.route__country {
+  margin-bottom: 10px;
+}
+
+.route__country:nth-of-type(1) {
+  margin-top: 20px;
+}
