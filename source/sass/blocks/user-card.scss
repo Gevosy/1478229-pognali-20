@@ -1,7 +1,7 @@
 .user-card {
   background-color: $white;
   width: 270px;
-  border-radius: 18px 18px 15px 15px;
+  border-radius: 15px;
 }
 
 .user-card__img {
@@ -16,7 +16,7 @@
 }
 
 .user-card__name-author {
-  color: $specialBlueLight;
+  color: $special-blue-light;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
@@ -24,7 +24,7 @@
 }
 
 .user-card__hash-tag {
-  color: $specialGrey;
+  color: $special-grey;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;

@@ -1,7 +1,7 @@
 .buttons-show-invite {
   display: block;
-  background-color: $basicYellow;
-  color: $basicScheme;
+  background-color: $basic-yellow;
+  color: $basic-blue;
 
   font-style: normal;
   font-weight: bold;
@@ -15,16 +15,15 @@
   border-radius: 25px;
 
   &:hover {
-    background-color: $specialYellowDark;
-    transition: 0.3s;
+    background-color: $special-yellow-dark;
+    transition: color 0.3s, background-color 0.3s;
   }
 
   &:active {
-    color: rgba(29, 46, 91, 0.3);
-    opacity: 1;
+    color: rgba($basic-blue, 0.3);
   }
 
-  &--background--white {
+  &--background-white {
     background-color: $white;
     border: none;
 
@@ -34,7 +33,7 @@
     }
 
     &:active {
-      background-color: $opacityYellow;
+      background-color: $opacity-yellow;
       opacity: 0.3;
     }
   }

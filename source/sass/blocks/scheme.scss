@@ -3,12 +3,12 @@
 }
 
 .scheme__roadmap-action {
-  background-color: $basicBlue;
+  background-color: $basic-blue;
   padding-top: 48px;
 }
 
 .scheme__01 {
-  background-color: $basicSchemeT;
+  background-color: $basic-scheme-t;
 }
 
 .scheme__text,
@@ -40,7 +40,7 @@
 }
 
 .scheme__service {
-  background-color: $basicBlueService;
+  background-color: $basic-blue-service;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   padding-top: 33px;
@@ -48,7 +48,7 @@
 }
 
 .scheme__title-serivce {
-  color: $specialOrange;
+  color: $special-orange;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -75,4 +75,8 @@
 
 .scheme__paragraph-serivce-add {
   font-weight: bold;
+}
+
+.scheme__roadmap-list {
+  padding-bottom: 40px;
 }

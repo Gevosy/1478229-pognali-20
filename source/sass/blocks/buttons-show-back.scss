@@ -1,5 +1,5 @@
 .buttons-show-back {
-  color: $specialBlueLight;
+  color: $special-blue-light;
 
   font-style: normal;
   font-weight: bold;
@@ -8,10 +8,19 @@
 
   text-transform: uppercase;
 
-  &--send--yellow {
-    background-color: $basicYellow;
+  &--send {
+    background-color: $basic-yellow;
     padding: 8px 20px;
     border: none;
     border-radius: 20px;
+
+    &:hover {
+      background-color: $special-yellow-dark;
+      transition: color 0.3s, background-color 0.3s;
+    }
+
+    &:active {
+      color: rgba($special-blue-light, 0.3);
+    }
   }
 }

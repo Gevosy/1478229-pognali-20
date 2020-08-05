@@ -1,9 +1,9 @@
-@import "fonts.scss";
 @import "variables.scss";
+@import "fonts.scss";
 @import "blocks/button-authorization.scss";
-@import "blocks/first-group-buttons.scss"; /* Первая группа кнопок */
-@import "blocks/buttons-show-invite.scss";
-@import "blocks/buttons-show-back.scss";
+@import "blocks/first-group-buttons.scss"; /* 1 группа кнопок */
+@import "blocks/buttons-show-invite.scss"; /* 2 группа кнопок */
+@import "blocks/buttons-show-back.scss"; /* 3 группа кнопок */
 @import "blocks/visually-hidden.scss";
 @import "blocks/page.scss";
 @import "blocks/header.scss";

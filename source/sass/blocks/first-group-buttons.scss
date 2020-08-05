@@ -1,7 +1,7 @@
 .first-group-buttons {
   display: block;
-  color: $specialBlueLight;
-  background-color: $basicYellow;
+  color: $special-blue-light;
+  background-color: $basic-yellow;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -10,7 +10,7 @@
   border-radius: 20px;
 
   &:hover {
-    background-color: $specialYellowDark;
+    background-color: $special-yellow-dark;
     transition: 0.3s;
   }
 
@@ -20,7 +20,7 @@
   }
 
   &--show {
-    background-color: $basicYellow;
+    background-color: $basic-yellow;
     padding: 23px;
   }
 
@@ -33,20 +33,18 @@
   }
 
   &--point {
-    border: 3px solid $basicSchemeT;
+    border: 3px solid $basic-scheme-t;
     background-color: transparent;
     padding: 22px;
 
     &:hover {
-      background-color: $basicSchemeT;
+      background-color: $basic-scheme-t;
       color: white;
-      transition: 0.3s;
+      transition: color 0.3s, background-color 0.3s;
     }
 
     &:active {
-      background-color: $basicSchemeT;
-      color: rgba(255, 255, 255, 0.3);
-      opacity: 1;
+      color: rgba($white, 0.3);
     }
   }
 }
