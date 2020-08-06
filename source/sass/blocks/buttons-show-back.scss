@@ -1,0 +1,26 @@
+.buttons-show-back {
+  color: $special-blue-light;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+
+  text-transform: uppercase;
+
+  &--send {
+    background-color: $basic-yellow;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+
+    &:hover {
+      background-color: $special-yellow-dark;
+      transition: color 0.3s, background-color 0.3s;
+    }
+
+    &:active {
+      color: rgba($special-blue-light, 0.3);
+    }
+  }
+}

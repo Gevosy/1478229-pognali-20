@@ -1,0 +1,40 @@
+.buttons-show-invite {
+  display: block;
+  background-color: $basic-yellow;
+  color: $basic-blue;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 17px;
+
+  text-align: center;
+  text-transform: uppercase;
+  padding: 14px 20px;
+
+  border-radius: 25px;
+
+  &:hover {
+    background-color: $special-yellow-dark;
+    transition: color 0.3s, background-color 0.3s;
+  }
+
+  &:active {
+    color: rgba($basic-blue, 0.3);
+  }
+
+  &--background-white {
+    background-color: $white;
+    border: none;
+
+    &:hover {
+      background-color: $white;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
+    }
+
+    &:active {
+      background-color: $opacity-yellow;
+      opacity: 0.3;
+    }
+  }
+}

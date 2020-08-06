@@ -1,0 +1,15 @@
+.calendar {
+  color: $special-grey;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.calendar__head {
+  font-weight: 400;
+
+  &--weekend {
+    color: $calendar-weekend;
+  }
+}

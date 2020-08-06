@@ -3,18 +3,55 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
   </head>
   <body class="page__body">
-    <header class="header">
-      <div class="navigation">
-        <a class="logo navigation__logo">
-          <img class="logo__img" width="96" height="15" alt="Логотип компании Погнали?">
+
+    <header class="header"> <!-- Шапка -->
+      <nav class="menu header__menu">
+        <a class="logo logo--blue menu__logo">
+          <img class="logo__img" src="img/logo-mobile-white@1x.png" width="96" height="15" alt="Логотип компании Погнали?">
         </a>
-        <button class="burger navigation__burger">
-          <span class="visually-hiden">Открыть меню</span>
+        <button class="burger menu__burger">
+          <span class="visually-hidden">Открыть меню</span>
         </button>
-      </div>
-      <h1 class="page-title">Попутчики</h1>
+        <div class="open-menu">
+          <ul class="navigation open-menu__navigation">
+            <li class="navigation"><a href="#" class="navigation__link">О сервисе</a></li>
+            <li class="navigation"><a href="form.html" class="navigation__link">Направления</a></li>
+            <li class="navigation"><a href="catalog.html" class="navigation__link">Попутчики</a></li>
+          </ul>
+          <a class="button-authorization" href="#">Авторизация</a>
+          <ul class="contacts registation__contacts">
+            <li class="contacts__item">
+              <span class="visually-hidden">Телефон</span>
+              <a class="contacts__link contacts__link--tel" href="tel:88005558628">8 800 555-86-28</a>
+            </li>
+            <li class="contacts__item">
+              <span class="visually-hidden">Почта</span>
+              <a class="contacts__link contacts__link--email" href="mailto:htmlacademy@mail.ru">mail@htmtlacademy.ru</a>
+            </li>
+          </ul>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#">
+                <span class="visually-hidden">Страница в Facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">
+                <span class="visually-hidden">Страница в ВКонтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--inst" href="#">
+                <span class="visually-hidden">Страница в Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="page-title header__page-title">Попутчики</h1>
     </header>
     <main class="main">
       <section class="filter">
@@ -222,16 +259,16 @@
                 </div>
               </div>
             </fieldset>
-            <button class="button" type="submit">Показать</button>
+            <button class="buttons-show-invite buttons-show-invite--background-white" type="submit">Показать</button>
           </form>
         </div>
       </section>
       <section class="travel">
         <h2 class="visually-hiden">Выбери любого попутчика и путешествуй вместе!</h2>
-        <article class="travel-companion">
+        <article class="travel-companion travel__travel-companion">
           <div class="travel-companion__information">
             <a class="travel-companion__link" href="#">
-              <img class="travel-companion__img" src="" width="70" height="70" alt="Попутчик по имени Таня Фирсова. Погнали?">
+              <img class="travel-companion__img" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Попутчик по имени Таня Фирсова. Погнали?">
             </a>
             <div class="travel-companion__wrapper">
               <a class="travel-companion__name" href="#">Таня Фирсова</a>
@@ -278,12 +315,13 @@
             <span class="travel-companion__text">level</span>
             <span class="travel-companion__number">99</span>
           </div>
-          <a class="button-show" href="#">Позвать!</a>
+          <a class="buttons-show-invite" href="#">Позвать!</a>
         </article>
-        <article class="travel-companion">
+
+        <article class="travel-companion travel__travel-companion">
           <div class="travel-companion__information">
             <a class="travel-companion__link" href="#">
-              <img class="travel-companion__img" src="" width="70" height="70" alt="Попутчик по имени Петя Демин. Погнали?">
+              <img class="travel-companion__img" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Попутчик по имени Петя Демин. Погнали?">
             </a>
             <div class="travel-companion__wrapper">
               <a class="travel-companion__name" href="#">Петя Демин</a>
@@ -327,12 +365,13 @@
             <span class="travel-companion__text">level</span>
             <span class="travel-companion__number">80</span>
           </div>
-          <a class="button-show" href="#">Позвать!</a>
+          <a class="buttons-show-invite" href="#">Позвать!</a>
         </article>
-        <article class="travel-companion">
+
+        <article class="travel-companion travel__travel-companion">
           <div class="travel-companion__information">
             <a class="travel-companion__link" href="#">
-              <img class="travel-companion__img" src="" width="70" height="70" alt="Попутчик по имени Марк Смолов. Погнали?">
+              <img class="travel-companion__img" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Попутчик по имени Марк Смолов. Погнали?">
             </a>
             <div class="travel-companion__wrapper">
               <a class="travel-companion__name" href="#">Марк Смолов</a>
@@ -380,12 +419,13 @@
             <span class="travel-companion__text">level</span>
             <span class="travel-companion__number">25</span>
           </div>
-          <a class="button-show" href="#">Позвать!</a>
+          <a class="buttons-show-invite" href="#">Позвать!</a>
         </article>
-        <article class="travel-companion">
+
+        <article class="travel-companion travel__travel-companion">
           <div class="travel-companion__information">
             <a class="travel-companion__link" href="#">
-              <img class="travel-companion__img" src="" width="70" height="70" alt="Попутчик по имени Лариса Роговая. Погнали?">
+              <img class="travel-companion__img" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Попутчик по имени Лариса Роговая. Погнали?">
             </a>
             <div class="travel-companion__wrapper">
               <a class="travel-companion__name" href="#">Лариса Роговая</a>
@@ -429,10 +469,10 @@
             <span class="travel-companion__text">level</span>
             <span class="travel-companion__number">50</span>
           </div>
-          <a class="button-show" href="#">Позвать!</a>
+          <a class="buttons-show-invite" href="#">Позвать!</a>
         </article>
         <div class="pagination"> <!--Независимый блок отдельный-->
-          <a class="pagination__show-more" href="#">Показать еще</a>
+          <a class="buttons-show-back pagination__buttons-show-back" href="#">Показать еще</a>
           <ul class="pagination__page-list">
             <li class="pagination__page-item">
               <a class="pagination__link" href="#">
@@ -450,7 +490,7 @@
     </main>
     <footer class="footer">
       <a class="logo footer__logo">
-        <img class="logo__img" width="96" height="15" alt="Логотип компании Погнали?">
+        <img class="logo__img" src="img/logo-mobile-blue@1x.png" width="96" height="15" alt="Логотип компании Погнали?">
       </a>
       <ul class="social footer__developer">
         <li class="social__item">
@@ -471,9 +511,8 @@
       </ul>
       <a class="developer footer__developer" href="https://htmlacademy.ru/">
         <p class="developer__text">Разработано</p>
-        <img class="academy developer__academy" width="27" src="" height="33" alt="Логотип компании - HtmlAcademy">
+        <img class="academy developer__academy" width="27" src="img/htmlacademy.svg" height="33" alt="Логотип компании - HtmlAcademy">
       </a>
-      </div>
     </footer>
   </body>
 </html>

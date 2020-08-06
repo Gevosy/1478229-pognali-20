@@ -1,0 +1,31 @@
+.header {
+  background-color: $main-color;
+  min-height: 477px;
+  padding-top: 27px;
+
+  &--background {
+    background-image:
+      url("../img/globe-back-mobile@1x.jpg"),
+      url("../img/traveller-illustration-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: right right;
+  }
+}
+
+.header__text {
+  color: $white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+}
+
+.header__menu {
+  padding-top: 26px;
+}
+
+.header__page-title {
+  padding: 0 0 12px 0;
+  margin: 61px 0 0 0;
+}
