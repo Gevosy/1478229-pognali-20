@@ -65,7 +65,7 @@
           </div>
           <input class="profile__change-photo visually-hidden" type="file" name="photo" id="photo">
           <label class="profile__label" for="photo">Сменить фото</label>
-          <div class="profile__hast-tag"> <!--Подумать-->
+          <div class="profile__hast-tag"> <!--Решить с обводкой-->
             <label class="profile__label" for="hash-tag">Тэги</label>
             <textarea class="profile__description-tag" id="hast-tag">#бургер #бар #футбол #концерт #крафт</textarea>
           </div>
@@ -144,6 +144,7 @@
                 <label class="parametrs__label parametrs__label--children" for="children">Можно с детьми</label>
               </div>
               <div class="calendar parameters__calendar">
+                <p class="calendar__month">Март 2019</p>
                 <table class="calendar__table">
                   <tr class="calendar__rows">
                     <th class="calendar__head">п</th>
@@ -155,13 +156,13 @@
                     <th class="calendar__head calendar__head--weekend">в</th>
                   </tr>
                   <tr class="calendar__rows">
-                    <td class="calendar__columns"><a class="calendar__link"></a>23</a></td>
-                    <td class="calendar__columns"><a class="calendar__link"></a>24</a></td>
-                    <td class="calendar__columns"><a class="calendar__link"></a>25</a></td>
-                    <td class="calendar__columns"><a class="calendar__link"></a>26</a></td>
-                    <td class="calendar__columns"><a class="calendar__link"></a>27</a></td>
-                    <td class="calendar__columns"><a class="calendar__link"></a>28</a></td>
-                    <td class="calendar__columns"><a class="calendar__link"></a>1</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">23</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">24</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">25</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">26</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">27</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">28</a></td>
+                    <td class="calendar__columns"><a class="calendar__link">1</a></td>
                   </tr>
                   <tr class="calendar__rows">
                     <td class="calendar__columns"><a class="calendar__link">2</a></td>
@@ -194,7 +195,7 @@
                     <td class="calendar__columns"><a class="calendar__link">23</a></td>
                     <td class="calendar__columns"><a class="calendar__link">24</a></td>
                     <td class="calendar__columns"><a class="calendar__link">25</a></td>
-                    <td class="calendar__columns"><a href="#" class="calendar__link calendar__link--choosing">26</a></td>
+                    <td class="calendar__columns"><a href="#" class="calendar__link calendar__link--choosing calendar__link--check">26</a></td>
                     <td class="calendar__columns"><a href="#" class="calendar__link calendar__link--choosing">27</a></td>
                     <td class="calendar__columns"><a href="#" class="calendar__link calendar__link--choosing">28</a></td>
                     <td class="calendar__columns"><a href="#" class="calendar__link calendar__link--enable-day">29</a></td>
@@ -217,9 +218,10 @@
               <span class="parametrs__sub">Маршрут</span>
             </h3>
             <p class="parametrs__paragraph"> Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
-            <button class="parametrs__country country-first" type="button">Босния и Грецеговина</button>
-            <button class="parametrs__country country-second" type="button">Чехия</button>
-            <button class="parametrs__country parametrs__country--change" type="button">Выберите страну</button>
+            <button class="parametrs__country" type="button">Босния и Грецеговина</button>
+            <button class="parametrs__country" type="button">Чехия</button>
+            <button class="parametrs__country" type="button">Выберите страну</button>
+            <button class="parametrs__country parametrs__country--add" type="button">Добавить страну</button>
             <div class="change-country parameters__change-country">
               <ul class="alphabet change-country__alphabet">
                 <li class="alphabet__item">
@@ -334,7 +336,6 @@
                 </li>
               </ul>
             </div>
-            <button class="button button--add-country" type="button">Добавить страну</button>
             <a class="first-group-buttons first-group-buttons--step" href="#third">Следующий шаг</a>
             <a class="buttons-show-back" href="#first">На шаг назад</a>
           </div>

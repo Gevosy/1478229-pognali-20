@@ -1,3 +1,23 @@
 .adress {
   background-color: $basic-yellow;
+
+  padding-top: 63px;
+  padding-bottom: 35px;
+}
+
+.adress__point {
+  color: $special-blue-light;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+
+  width: 175px;
+  margin-bottom: 32px;
+}
+
+.adress__map {
+  margin-top: 35px;
 }

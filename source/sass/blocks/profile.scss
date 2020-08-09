@@ -1,3 +1,29 @@
-.country-list {
-  color: red;
+.profile__img {
+  border-radius: 50%;
+}
+
+.profile__label,
+.profile__title,
+.profile__description-tag {
+  color: $special-blue-light;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+
+  text-transform: uppercase;
+}
+
+.profile__description-tag {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  background-color: transparent;
+  color: rgba($special-grey, 0.6);
+  font-weight: normal;
+  text-transform: none;
+  border: none;
+  resize: none;
+}
+
+.profile__hast-tag {
+  margin-bottom: 25px;
 }
