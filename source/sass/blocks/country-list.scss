@@ -1,3 +1,10 @@
 .country-list {
-  color: red;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.country-list__link {
+  color: $special-grey;
 }

@@ -1,0 +1,25 @@
+.continent {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.continent__link {
+  color: $basic-scheme-t;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  &--active {
+    color: $basic-scheme-t;
+    opacity: 1;
+  }
+}

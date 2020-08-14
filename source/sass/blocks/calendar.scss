@@ -13,3 +13,31 @@
     color: $calendar-weekend;
   }
 }
+
+.calendar__month {
+  color: $special-blue-light;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.calendar__link {
+  color: rgba($special-grey, 0.3);
+
+  &--choosing {
+    background-color: $special-blue-light;
+    color: $white;
+  }
+
+  &--check {
+    border: 2px solid $calendar-weekend;
+  }
+
+  &--enable-day {
+    background-color: $basic-gray-light;
+    color: $special-blue-light;
+  }
+}
