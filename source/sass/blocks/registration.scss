@@ -35,16 +35,18 @@
 }
 
 .registration__email-input {
-  border: none;
-  border-radius: 15px;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-weight: bold;
+  color: $special-grey;
 
   width: 220px;
   padding: 22px 25px;
 
+  border: none;
+  border-radius: 15px;
+
   &::placeholder {
     color: rgba($special-grey, 0.3);
-    font-style: normal;
-    font-weight: bold;
     font-size: 18px;
     line-height: 18px;
   }
